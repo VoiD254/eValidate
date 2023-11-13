@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+    padding: 19px 12px;
+}
+
+ul{
+    display: flex;
+}
+
+ul li {
+    list-style: none;
+    padding: 0 13px;
+    font-size: 14px;
+}
+
+ul li a {
+    padding: 6px;
+    border: solid 2.3px;
+    border-color: white;
+    border-radius: 13px;
+    text-decoration: none;
+    color: white;
+}
+
+ul > li > a:hover{
+    background-color: white;
+    color: black;
+}
+
+.logo a{
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.logo img{
+    width: 15px;
+    filter: invert(1);
+}
+
+main{
+    min-height: 100vh;
+}
+
+#username{
+    min-width: 24vw;
+    border: solid 2px;
+    border-radius: 4px;
+    padding: 2px;
+}
+
+.container{
+    max-width: 80vw;
+    margin: auto;
+    padding: 15px;
+}
+
+.container h1 {
+    padding: 0 0 10px;
+}
+
+.btn{
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+    padding: 8px;
+}
+
+.btn:hover{
+    border-color: gray;
+    background-color: gray;
+    color: black;
+}
+
+#resultCon::first-letter{
+    text-transform: uppercase;
+}
+
+#resultCon p{
+    font-weight: 100;
+    padding: 5px 0 0 10px;
+}
+
+footer{
+    font-size: 13px;
+    background-color: black;
+    color: white;
+    display: flex;
+    padding: 12px;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 600px){
+    .container{
+        font-size: 13px;
+    }
+
+    nav{
+        flex-direction: column;
+    }
+
+    .logo{
+        padding: 0 0 17px;
+    }
+
+    .logo span{
+        font-size: 23px;
+    }
+
+    #username{
+        min-width: 65vw;
+    }
+}
